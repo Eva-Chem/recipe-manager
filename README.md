@@ -8,7 +8,7 @@ Recipe Manager is a single-page application (SPA) that allows users to:
 - Add new recipes with images
 - Enter multiple ingredients
 - Edit and delete existing recipes
-- Store and retrieve recipe data via a mock backend (`json-server`)
+- Store and retrieve recipe data via a backend (`json-server`)
 
 This app was built using **HTML, CSS, and JavaScript**, and communicates with a backend API using asynchronous fetch requests.
 
