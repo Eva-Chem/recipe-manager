@@ -1,0 +1,155 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+  color: #333;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea,
+form button {
+  padding: 12px;
+  margin-top: 10px;
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+form button {
+  background-color: #e67e22; /* warm orange */
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #d35400;
+}
+
+#ingredient-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+#ingredient-preview span {
+  background-color: #eee;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #333;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+#ingredient-preview span .remove {
+  margin-left: 8px;
+  font-weight: bold;
+  color: #777;
+  cursor: pointer;
+}
+
+/* Recipe List Container */
+#recipe-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+/* Horizontal Recipe Card Layout */
+.recipe-card {
+  display: flex;
+  align-items: flex-start;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+}
+
+.recipe-card img {
+  width: 25%;
+  height: 100%;
+  object-fit: cover;
+  border-right: 1px solid #eee;
+}
+
+.recipe-card .content {
+  flex: 1;
+  padding: 16px;
+}
+
+.recipe-card h3 {
+  margin: 0;
+  color: #333;
+}
+
+.recipe-card ul {
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+.recipe-card p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+
+.recipe-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0 0;
+  border-top: 1px solid #eee;
+  margin-top: 10px;
+  background: none;
+}
+
+
+.recipe-actions button {
+  padding: 10px;
+  flex: 1;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.recipe-actions .edit {
+  background-color: #27ae60; /* green */
+  color: white;
+}
+
+.recipe-actions .delete {
+  background-color: #c0392b; /* deep red */
+  color: white;
+}
