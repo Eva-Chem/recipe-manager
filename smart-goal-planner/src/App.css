@@ -1,0 +1,155 @@
+/* General page styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fa;
+  margin: 0;
+  padding: 0 20px; /* Adds spacing left and right for the entire page */
+}
+
+/* Main App container */
+.App {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Title */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Goal input form */
+.goal-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.goal-form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.goal-form button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: #4cafef;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.goal-form button:hover {
+  background-color: #3a9edb;
+}
+
+/* Goal cards */
+.goal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.goal-card {
+  background-color: white; /* Always white regardless of status */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Goal title */
+.goal-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #606060;
+}
+
+/* Deposit section */
+.deposit-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deposit-section input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.deposit-section button {
+  padding: 8px 12px;
+  background-color: #4cafef;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.deposit-section button:hover {
+  background-color: #3a9edb;
+}
+
+/* Actions: edit & delete */
+.goal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.goal-actions button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.goal-actions .edit-btn {
+  background-color: #ffc107;
+  color: white;
+}
+
+.goal-actions .edit-btn:hover {
+  background-color: #e0a800;
+}
+
+.goal-actions .delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.goal-actions .delete-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Status labels */
+.status {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.status.in-progress {
+  color: #007bff;
+}
+
+.status.completed {
+  color: #28a745;
+}
+
+.status.overdue {
+  color: #dc3545;
+}
